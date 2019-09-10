@@ -416,11 +416,10 @@ a:hover {
     max-width: 360px;
     margin: 0 auto;
 }
-.feature-box i {
-    font-size: 7em;
-    line-height: 0 !important;
-    margin: 0;
-    padding: 0;
+.feature-box img {
+    height: 200px;
+    width: 180px;
+    border-radius: 5px;
 }
 .feature-box p {
     padding: 0px 20px;
@@ -429,6 +428,7 @@ a:hover {
     margin: 0;
     padding: 20px 0px;
     font-weight: 300;
+    letter-spacing: 2px;
 }
 
 
@@ -511,6 +511,58 @@ a:hover {
 }
 
 
+
+/* ///////////////////////////////////////////////////////////////////// 
+//  10 - Testimonial
+/////////////////////////////////////////////////////////////////////*/
+
+
+#testimonial {
+    background: url(../img/testi-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.review-star {
+    text-align: center;
+    color: rgb(255, 214, 0);
+    font-size: 30px;
+    padding-top: 20px;
+}
+.client-pic {
+    padding: 0em 2em;
+    max-width: 360px;
+    margin: 0 auto;
+}
+.client-pic img {
+    border-radius: 50%;
+}
+
+.review-desc {
+    font-size: 24px;
+    line-height: 1.8;
+    font-weight: 100;
+    font-style: italic;
+    padding-top: 20px;
+    color: #fff;
+}
+#testimonial .block-title {
+    color: #fff;
+}
+#testimonial .block-title span {
+    border-color: #fff;
+}
+p.client-name {
+    float: right;
+    font-size: 30px;
+    color: #fff;
+    display: inline-block;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 5px;
+}
+
+
 /* ///////////////////////////////////////////////////////////////////// 
 //  10 - Developer Section
 /////////////////////////////////////////////////////////////////////*/
@@ -569,58 +621,6 @@ a:hover {
 
 
 /* ///////////////////////////////////////////////////////////////////// 
-//  10 - Testimonial
-/////////////////////////////////////////////////////////////////////*/
-
-
-#testimonial {
-    background: url(../img/testi-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.review-star {
-    text-align: center;
-    color: rgb(255, 214, 0);
-    font-size: 30px;
-    padding-top: 20px;
-}
-.client-pic {
-    padding: 0em 2em;
-    max-width: 360px;
-    margin: 0 auto;
-}
-.client-pic img {
-    border-radius: 50%;
-}
-
-.review-desc {
-    font-size: 24px;
-    line-height: 1.8;
-    font-weight: 100;
-    font-style: italic;
-    padding-top: 20px;
-    color: #fff;
-}
-#testimonial .block-title {
-    color: #fff;
-}
-#testimonial .block-title span {
-    border-color: #fff;
-}
-p.client-name {
-    float: right;
-    font-size: 30px;
-    color: #fff;
-    display: inline-block;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-    padding-bottom: 5px;
-}
-
-
-
-/* ///////////////////////////////////////////////////////////////////// 
 //  11 - Subscribe Section
 /////////////////////////////////////////////////////////////////////*/
 
@@ -637,6 +637,9 @@ p.client-name {
     font-size: 24px;
     font-weight: 300;
     padding-bottom: 30px;
+}
+.subscribe-text .p{
+    text-align: center;
 }
 .container.subscribe-wrap {
     max-width: 600px;
@@ -670,61 +673,21 @@ p.client-name {
 /////////////////////////////////////////////////////////////////////*/
 
 
-.address {
-    width: 30%;
-    float: left;
-    background: url(../img/gmap-bg.jpg);
-    height: 640px;
-}
-.mailbox {
-    width: 70%;
-    float: left;
+#Help {
     background-image: url(../img/map-image.png);
-    background-color: #222;
     padding-bottom: 111px;
-    height: 640px;
+     background-color: #222;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-.address .container {
-    max-width: 100%;
-}
-.mailbox .container {
-    max-width: 90%;
-}
-.address-list {
-    list-style: none;
-    padding: 160px 0px 70px 0px;
-    width: 100%;
-    max-width: 350px;
-    margin: 0 auto;
-    display: table;
-}
-.address-list li {
-    font-size: 22px;
-    padding: 0.5em 0;
+#Help .block-title {
     color: #fff;
-    font-weight: 100;
 }
-.address-list li i {
-    display: table-cell;
-    background-color: blue;
-    line-height: 1.8;
-    width: 81px;
-    height: 70px;
-    text-align: center;
-    font-size: 45px;
-    border-radius: 50%;
-    margin: 0;
-    vertical-align: middle;
+#Help .block-title span {
+    border-color: #fff;
 }
-.address-list li span {
-    padding: 0px 0px 0px 20px;
-    display: table-cell;
-    vertical-align: middle;
-}
-.mailbox .container {
-    margin-top: 225px;
-    margin-bottom: 0px;
-}
+
 #contactForm input,#contactForm textarea {
     border-radius: 0px;
     box-shadow: none;
@@ -762,20 +725,6 @@ p.client-name {
     background: #00ceb8;
     color: #fff;
 }
-#contact {
-    position: relative;
-}
-.contact-wrap {
-    position: absolute;
-    z-index: 9999;
-    color: #fff;
-    width: 100%;
-    top: 50px;
-}
-
-#contact .block-title span {
-    border-color: #fff;
-}
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #6ecba9;
@@ -808,7 +757,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 
 }
 .footer-container{
-  padding: 0 50px;
+  padding: 20px 20px 0px 20px;
 }
 .segment-one h3{
     font-family: Courgette ;
@@ -872,27 +821,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 
     border-radius: 10px;
 }
-.segment-four h2{
-    color: #fff;
-    font-weight: bolder;
-    letter-spacing: 7px;
-    font-family: Poppins;
-    text-transform: uppercase;
 
-}
-.segment-four h2:before{
-    content:'|';
-    color: #c65039;
-    padding-right: 10px ;
-}
-.segment-four form input[type=submit]{
-    background: #c65039;
-    border: none;
-    padding: 3px 15px;
-    margin-left: -5px;
-    color:#fff;
-    text-transform: uppercase;
-}
 .footer-social {
     margin: 0;
     padding: 8px 0px;
@@ -916,6 +845,38 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     line-height: 1.6;
     border-radius: 50%;
     transition: 0.5s ease all;
+}
+.segment-four h2{
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: 7px;
+    font-family: Poppins;
+    text-transform: uppercase;
+
+}
+.segment-four h2:before{
+    content:'|';
+    color: #c65039;
+    padding-right: 10px ;
+}
+.segment-four ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.segment-four ul li{
+    
+    line-height: 25px;
+     font-size: 14px;
+     list-style-type: none;
+}
+.address-list i{
+    font-size: 20px;
+    padding: 2px 0px;
+}
+.copy-right {
+    text-align: center;
+        border-bottom:1px solid rgba(255,255,255,0.3);
 }
 
 /*icons*/
@@ -953,7 +914,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 }
 /* ///////////////////////////////////////////////////////////////////// 
 //  14 - Responsive Fixes
-/////////////////////////////////////////////////////////////////////*/
+/////////////////////////////////////////////////////////////////////
 
 
 /*1340px - 1170px*/
