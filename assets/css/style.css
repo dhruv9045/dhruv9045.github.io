@@ -78,7 +78,26 @@ a:hover {
     text-decoration: none;
     color: #00ceb8;
 }
+/*UPPER BUTTON*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 4;
+  font-size: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+}
 
+#myBtn:hover {
+  background-color: #00ceb8;
+}
+
+/*UPPER BUTTON END*/
 .img_res{
     display: block;
     width: 100%;
@@ -165,7 +184,6 @@ a:hover {
 /////////////////////////////////////////////////////////////////////*/
 
 #sidebar-wrapper {
-    z-index: 1000;
     position: fixed;
     right: 0;
     width: 260px;
@@ -173,7 +191,7 @@ a:hover {
     margin-right: -260px;
     overflow-y: auto;
     background: #00967f;
-    z-index: 99999999;
+    z-index: 6;
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -ms-transition: all 0.4s ease 0s;
@@ -197,6 +215,7 @@ a:hover {
 }
 
 .sidebar-nav li a {
+    font-family: 'century gothic';
     display: block;
     text-decoration: none;
     color: #FFF;
@@ -270,7 +289,7 @@ a:hover {
     position: fixed; 
     left: 0; 
     top: 0; 
-    z-index: 99999999999; 
+    z-index: 8; 
     width: 100%; 
     height: 100%; 
     overflow: visible; 
@@ -288,8 +307,7 @@ a:hover {
     background: transparent;
     padding: 15px 0px;
     transition: all 0.5s;
-    z-index: 99999;
-    
+    z-index: 5;
 }
 
 .fixed {
@@ -309,7 +327,6 @@ a:hover {
 }
 #logo_menu {
     padding: 5px 0px;
-
 }
 #menu-toggle {
     z-index: 1;
@@ -402,34 +419,140 @@ a:hover {
     position: absolute;
     bottom: 0%;
     left: 50%;
-    z-index: 99;
+    z-index: 4;
     cursor: pointer;
 }
 
 /* ///////////////////////////////////////////////////////////////////// 
-//  07 - Features
+//  07 - Achivements
 /////////////////////////////////////////////////////////////////////*/
 
-.feature-box {
+
+#Achivements .feature-box {
     padding: 30px 0px;
     text-align: center;
     max-width: 360px;
     margin: 0 auto;
 }
-.feature-box img {
+#Achivements .feature-box img {
     height: 200px;
     width: 180px;
     border-radius: 5px;
 }
-.feature-box p {
+#Achivements .feature-box p {
     padding: 0px 20px;
 }
-.feature-box h2 {
+#Achivements .feature-box h2 {
     margin: 0;
     padding: 20px 0px;
     font-weight: 300;
     letter-spacing: 2px;
 }
+/*///////////////////*/
+/*-------for card coming green border--------*/
+
+
+/*Border Box line in acadmic and achivement*/
+.features-section {
+    padding-top: 65px;
+    padding-bottom: 70px;
+    background: #f2f3f4;
+}
+
+.features-slider .owl-nav {
+    text-align: center;
+}
+
+.features-slider .owl-nav button.owl-next,
+.features-slider .owl-nav button.owl-prev {
+    width: 50px;
+    height: 50px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #12c7b8;
+    color: #fff;
+    font-size: 20px;
+    margin: 50px 5px 0;
+    border-radius: 50%;
+}
+.feature-box {
+    text-align: center;
+    padding: 50px 15px 40px;
+    background: #fff;
+    min-height: 373px;
+}
+
+.feature-box::after,
+.feature-box::before {
+    position: absolute;
+    content: "";
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    z-index: 0;
+}
+
+.feature-box::after {
+    width: 0%;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    border-bottom: 2px solid #12c7b8;
+    border-top: 2px solid #12c7b8;
+}
+
+.feature-box::before {
+    width: 100%;
+    height: 0%;
+    top: 50%;
+    left: 0;
+    border-left: 2px solid #12c7b8;
+    border-right: 2px solid #12c7b8;
+}
+
+.feature-box:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+.feature-box:hover::before {
+    top: 0;
+    height: 100%;
+}
+
+.feature-box:hover i {
+    color: #12c7b8;
+}
+
+.feature-box i {
+    font-size: 48px;
+    color: #c8d1da;
+    position: relative;
+    z-index:3;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.feature-box h5 {
+    font-weight: 700;
+    padding: 15px 0px 25px;
+    position: relative;
+    z-index: 3;
+}
+
+.feature-box p {
+    font-size: 16px;
+    position: relative;
+    z-index: 3;
+}
+
+
 
 
 /* ///////////////////////////////////////////////////////////////////// 
@@ -446,14 +569,18 @@ a:hover {
     width: 200px;
     height: 200px;
 }
-#gallery .img_res:hover{
-    box-shadow: 2px 2px 8px white;
-    
+#screenshots .item .img_res:hover{
+    box-shadow: 6px 6PX 6px 6px white;
+    transition: all .2s ease-in;
+    filter: brightness(0.5);
+    -ms-transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+     transform: scale(1.2);
+
 }
 #screenshot .item:hover{
  width: 400px;
- height: 400px;
-    
+ height: 400px;    
 }
 #screenshots .item{
   padding: 0px 0px;
@@ -496,21 +623,19 @@ a:hover {
 /////////////////////////////////////////////////////////////////////*/
 
 
-.Professor-member {
+#professor .feature-section {
     text-align: center;
     margin-bottom: 40px;
     max-width: 360px;
     margin: 0 auto;
     margin-bottom: 40px;
 }
-.Professor-member p {
+#professor .feture-section p {
     padding: 10px 10px 15px 10px;
 }
-.Professor-member h2 {
+#professor .feture-section h2 {
     font-size: 25px;
 }
-
-
 
 /* ///////////////////////////////////////////////////////////////////// 
 //  10 - Testimonial
@@ -876,7 +1001,8 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 }
 .copy-right {
     text-align: center;
-        border-bottom:1px solid rgba(255,255,255,0.3);
+    margin-top: 30px;
+    border-bottom:1px solid rgba(255,255,255,0.3);
 }
 
 /*icons*/
