@@ -34,7 +34,7 @@
 <body id="home" >
 	
 	<!-- button -->
-<?php include("upper_button.php");	?>
+	<div class="upper_button"></div>
 	<!-- ****************************** Preloader ************************** -->
 
 	<div id="preloader"></div>
@@ -52,7 +52,8 @@
 	</nav>
 
 	<!-- ****************************** Header ************************** -->
-<?php include("header.php"); ?>
+
+	<div class="header"></div>
 
 <!-- logo of traic -->
 <!-- 	<section class="block" id="banner" >
@@ -410,7 +411,16 @@
 
 <!-- ****************************** footer ************************** -->
 
-		<?php include("footer.php"); ?>
+	<div class="footer"></div>
+<!-- ****************************** include .html ************************** -->
+			<script type="text/javascript">
+				$(function(){
+					$(".footer").load("footer.html");
+					$(".header").load("header.html");
+					$(".side_navbar").load("side_navbar.html");
+					$(".upper_button").load("upper_button.html");
+				});
+			</script>	
 	<!-- All the scripts -->
 	<script src="assets/js/count_down.js"></script>
 	<script src="assets/js/jquery-2.1.3.min.js"></script>
