@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<!-- ****************************** side_navbar ************************** -->
+
+	<nav id="sidebar-wrapper">
+		<a id="menu-close" href="#" class="close-btn toggle"><i class="ion-ios-close-empty"></i></a>
+	    <ul class="sidebar-nav">
+		    <li><a href="#home">Home</a></li>
+			<li><a href="#Achivements">Achivements</a></li>
+			<li><a href="#gallery">Gallery</a></li>
+			<li><a href="#Professor">Academic Leader</a></li>
+			<li><a href="#testimonial">Precious Reviews</a></li>
+			<li><a href="#Developer">Developer Section</a></li>		
+			<li><a href="#Help">Help</a></li>
+			
+
+	    </ul>
+	</nav>
+
+</body>
+</html>
