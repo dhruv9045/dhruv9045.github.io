@@ -52,16 +52,16 @@
 <body id="home" >
 	
 	<!-- button -->
-<?php include("upper_button.php");	?>
+<div class="upper_button">
 	<!-- ****************************** Preloader ************************** -->
 
 	<div id="preloader"></div>
 
 
 	<!-- ****************************** Sidebar ************************** -->
-<?php include("side_navbar.php"); ?>
+<div class="side_navbar">
 	<!-- ****************************** Header ************************** -->
-<?php include("header.php"); ?>
+<div class="header">
 
 	<!-- ****************************** bannerer ************************** -->
 
@@ -599,6 +599,9 @@
 			<script type="text/javascript">
 				$(function(){
 					$(".footer").load("footer.html");
+					$(".header").load("header.html");
+					$(".side_navbar").load("side_navbar.html");
+					$(".upper_button").load("upper_button.html");
 				});
 			</script>
 
