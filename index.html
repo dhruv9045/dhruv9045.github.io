@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Dhruv_Web</title>
-
-	<!--Youtube verification-->
-	<meta name="google-site-verification" content="Foavtlu4n507ycMBZ7mMwL7uzn-5xJWrtmsjNkOrd_Q" />
+	<title>T R A I C</title>
 
 	<!-- meta -->
 	<meta charset="utf-8">
@@ -37,12 +34,6 @@
       'fadeDuration':600*/
     })
 	</script>
-
-	<!--------------map-------------->
-	
-   
-   
-
 	<!--footer icon lib-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- fonts -->
@@ -61,8 +52,9 @@
 <body id="home" >
 	
 	<!-- button -->
-		<div class="upper_button"></div>
-	
+	<!-- 	<div class="upper_button"></div> -->
+			<img src="assets/img/top_button.png"onclick="topFunction()" id="myBtn">
+		<script type="text/javascript" src="assets/js/top_button.js"></script>
 
 	<!-- ****************************** Preloader ************************** -->
 
@@ -70,7 +62,7 @@
 
 
 	<!-- ****************************** Sidebar ************************** -->
-	<!--<div class="side_navbar"></div>-->
+	<!-- <div class="side_navbar"></div> -->
 	<nav id="sidebar-wrapper">
 		<a id="menu-close" href="#" class="close-btn toggle"><i class="ion-ios-close-empty"></i></a>
 	    <ul class="sidebar-nav">
@@ -86,8 +78,15 @@
 	    </ul>
 	</nav>
 	<!-- ****************************** Header ************************** -->
-	<div class="header"></div>
-
+	<!-- <div class="header"></div> -->
+	<header class="sticky" id="header">
+		<section class="container">
+			<section class="row" id="logo_menu">
+				<section class="col-xs-8"><a class="logo" href="index.html">T R A I C</a></section>
+				<section class="col-xs-4"><a id="menu-toggle" href="#" class="toggle wow rotateIn" data-wow-delay="1s"><i class="ion-navicon"></i></a></section>
+			</section>
+		</section>
+	</header>
 
 	<!-- ****************************** bannerer ************************** -->
 
@@ -97,8 +96,9 @@
 		<div class="row">
 			<div class="col-xs-12" class="welcome-heading">
 			<div class="welcome">
-			<img src="assets/img/dks.png">	
-		    <h1><i>Dhruv singh</i></h1>
+			<img src="assets/img/preloader.gif">	
+		    <h1>T R A I C</h1>
+		    <p>Robotics &amp; Innovation Club</p>
     		</div>
   		</div>
     </section>	
@@ -108,22 +108,22 @@
 		<script type="text/javascript" src="prc/app.js"></script>
 <!--particles.js Finished Here-->		
 		<section class="container">	
-			<a class="slidedown wow animated zoomIn" data-wow-delay="2s" href="#Achivements"><i class="ion-ios-download-outline"></i></a>
+			<a class="slidedown wow animated zoomIn" data-wow-delay="2s" href="#features"><i class="ion-ios-download-outline"></i></a>
 				<div class="col-md-6">
 					<div class="headings">
 						<div class="heading-responce" style="pointer-events: none;">
-						<h1 class="wow animated fadeInDown"><i>About</i></h1>
-						<p class="wow animated fadeInLeft">First cry: 14/Dec</p>
+						<h1 class="wow animated fadeInDown">About</h1>
+						<p class="wow animated fadeInLeft">Stablish in 20.</p>
 					</div>
 						<div class="row">
 							<div class="col-xs-6 col-sm-6 col-md-5">
 								<div>
-									<a href="http://www.youtube.com/c/DKSTechnology" target="_blank" class="polo-btn store wow animated bounceInUp"><i class=""></i> YouTube</a>
+									<a href="event.html" class="polo-btn store wow animated bounceInUp"><i class=""></i> Check Us</a>
 								</div>
 							</div>
 							<div class="col-xs-6 col-sm-6 col-md-5">
 								<div>
-									<a href="#footer" class="polo-btn store wow animated bounceInUp"><i class="#contact"></i> Contact Me</a>
+									<a href="#footer" class="polo-btn store wow animated bounceInUp"><i class="#contact"></i> Contact Us</a>
 								</div>
 							</div>
 						</div>
@@ -146,11 +146,21 @@
 				</h1></div>
 			</section>
 			<section class="row">
-				
+				<div class="col-sm-6 col-md-4">
+					<div class="feature-box wow animated flipInX" data-wow-delay="0.3s">
+						<img src="assets/img/Cognizance_logo.jpg">
+						<h2><strong>COGNIZANCE</strong></h2>
+						<p>IIT,Roorkee Congnizance<br>
+							<button type="button" class="btn btn-link" data-toggle="modal" data-target="#Modlling_COGNIZANCE">
+	  							Read more...
+							</button>
+						</p>
+					</div>
+				</div>
 				<div class="col-sm-6 col-md-4">
 					<div class="feature-box wow animated flipInX" data-wow-delay="0.3s">
 						<img src="assets/img/Techkriti_logo.png">
-						<h2><strong>TECHKRITI'19</strong></h2>
+						<h2><strong>TECHKRITI</strong></h2>
 						<p>IIT,Kanpur Techkriti<br>
 							<button type="button" class="btn btn-link" data-toggle="modal" data-target="#Modlling_TECHKRITI">
 	  							Read more...
@@ -161,15 +171,25 @@
 				<div class="col-sm-6 col-md-4">
 					<div class="feature-box wow animated flipInX" data-wow-delay="0.3s">
 						<img src="assets/img/Youthopia_logo.jpg">
-						<h2><strong>MANTHAN'19</strong></h2>
-						<p>College of Engineering Roorkee<br>
-							<button type="button" class="btn btn-link" data-toggle="modal" data-target="#Modlling_MANTHAN">
+						<h2><strong>YOUTHOPIA</strong></h2>
+						<p>DIT,Dehradun,Uttarakhand Youthopia<br>
+							<button type="button" class="btn btn-link" data-toggle="modal" data-target="#Modlling_YOUYHOPIA">
 	  							Read more...
 							</button>
 						</p>
 					</div>
 				</div>
-				
+				<div class="col-sm-6 col-md-4">
+					<div class="feature-box wow animated flipInX" data-wow-delay="0.6s">
+						<img src="assets/img/Jnanagni_logo.png">
+						<h2><strong>JNANAGNI</strong></h2>
+						<p>Gurukul Kangri,Haridwar, Uttarakhand Jnanagni<br>
+							<button type="button" class="btn btn-link" data-toggle="modal" data-target="#Modlling_JNANAGNI">
+	  							Read more...
+							</button>
+						</p>
+					</div>
+				</div>
 			</section>
 			<div class="clearfix"></div>
 		</section>
@@ -220,7 +240,7 @@
 						<h1 class="block-title wow animated rollIn">
 							<span class="bb-top-left"></span>
 							<span class="bb-bottom-left"></span>
-							Educational Qualification
+							Academic Leadership
 							<span class="bb-top-right"></span>
 							<span class="bb-bottom-right"></span>
 						</h1>
@@ -230,8 +250,8 @@
 			<section class="row" >
 				<section class="col-md-3 col-sm-6">
 					<div class="feature-box wow animated flipInX" data-wow-delay="0.3s">
-						<img src="assets/img/StLogo.png" class="img_res team-pic">
-						<h2 class="wow animated fadeInDown" data-wow-delay="0.7s">Matriculation</h2>
+						<img src="assets/img/dg_coer.jpg" class="img_res team-pic">
+						<h2 class="wow animated fadeInDown" data-wow-delay="0.7s">Prof. Satya P. Gupta</h2>
 						<h4 class="wow animated fadeInDown" data-wow-delay="0.7s"></h4>
 							<p class="wow animated fadeIn" data-wow-delay="0.7s">
 						<a type="button" class="btn btn-link" data-toggle="modal" data-target="#Modlling_1">
@@ -242,8 +262,8 @@
 				</section>
 				<section class="col-md-3 col-sm-6">
 					<div class="feature-box  wow animated flipInX" data-wow-delay="0.3s">
-						<img src="assets/img/GPSLogo.png" class="img_res team-pic">
-						<h2 class="wow animated fadeInDown" data-wow-delay="0.7s">Diploma</h2>
+						<img src="assets/img/director.jpg" class="img_res team-pic">
+						<h2 class="wow animated fadeInDown" data-wow-delay="0.7s">Maj Gen Soni</h2>
 						<p class="wow animated fadeIn" data-wow-delay="0.7s">
 						<a type="button" class="btn btn-link" data-toggle="modal" data-target="#Modalling_2">
   							Read more...
@@ -253,8 +273,8 @@
 				</section>
 				<section class="col-md-3 col-sm-6">
 					<div class="feature-box wow animated flipInX" data-wow-delay="0.3s">
-						<img src="assets/img/CoerLogo.png" class="img_res team-pic">
-						<h2 class="wow animated fadeInDown" data-wow-delay="0.7s">Bachelor of Technology</h2>
+						<img src="assets/img/dean_acadmics.png" class="img_res team-pic">
+						<h2 class="wow animated fadeInDown" data-wow-delay="0.7s">Dr. Brij Mohan Singh</h2>
 						<p class="wow animated fadeIn" data-wow-delay="0.7s">
 							<a type="button" class="btn btn-link" data-toggle="modal" data-target="#Modalling_3">
   							Read more...
@@ -276,7 +296,7 @@
 				<div class="title-box"><h1 class="block-title wow animated rollIn">
 				<span class="bb-top-left"></span>
 				<span class="bb-bottom-left"></span>
-				Qualification
+				Precious Reviews
 				<span class="bb-top-right"></span>
 				<span class="bb-bottom-right"></span>
 				</h1></div>
@@ -397,7 +417,7 @@
 				<div class="title-box"><h1 class="block-title wow animated rollIn">
 				<span class="bb-top-left"></span>
 				<span class="bb-bottom-left"></span>
-				<a href="http://www.youtube.com/c/DKSTechnology" target="_blank">YouTube</a>	
+				Developers
 				<span class="bb-top-right"></span>
 				<span class="bb-bottom-right"></span>
 				</h1></div>
@@ -557,7 +577,7 @@
 				<div class="title-box"><h1 class="block-title wow animated rollIn">
 				<span class="bb-top-left"></span>
 				<span class="bb-bottom-left"></span>
-				Message
+				Help
 				<span class="bb-top-right"></span>
 				<span class="bb-bottom-right"></span>
 				</h1></div>
@@ -599,17 +619,21 @@
 		</section>
 
 		<!-- ****************************** footer ************************** -->
-		<section class="footer" id="footer">
+
+			<!--<div class="footer" >-->
+
+<!-- ****************************** Footer ************************** -->
+			<section class="footer" id="footer">
 				<section class="footer-container">
 					<section class="row">
 						<div class="col-md-3 col-sm-6 col-xs-12 segment-one">
-							<h3>Career Objective</h3>
-							<p>To work in an organization that offers a challenging and learning environment to work, provides scope for individual development and offers attractive prospects for long term personal development and career growth.</p>
+							<h3>Traic</h3>
+							<p>hkghas gahsgjhsg  ,Bfjgu djk</p>
 						</div>
 						<div class="col-md-3 col-sm-6 col-xs-12 segment-two">
 							<h2>Divinector</h2>
 							<ul>
-								<li><a href="#">Event</a></li>
+								<li><a href="event.html">Event</a></li>
 								<li><a href="#">Support</a></li>
 								<li><a href="#">Hosting</a></li>
 								<li><a href="#">Career</a></li>
@@ -617,48 +641,28 @@
 							</ul>
 						</div>
 						<div class="col-md-3 col-sm-6 col-xs-12 segment-three">
-							<h2>Follow me</h2>
-							<p>Please Follow me on my Social Media Profile in order to keep the sit amet</p>
+							<h2>Follow Us</h2>
+							<p>Please Follow us on our Social Media Profile in order to keep the sit amet, consec</p>
 							<ul class="footer-social">
-							<li class="wow animated fadeInLeft facebook"><a href="https://www.facebook.com/profile.php?id=100008327387713" target="_blank"><i class="ion-social-facebook"></i></a></li>
-							<li class="wow animated fadeInDown linkedin"><a href="https://www.linkedin.com/in/dhruv-singh-a33224191/?originalSubdomain=in" target="_blank"><i class="ion-social-linkedin"></i></a></li>
-							<li class="wow animated fadeInDown googleplus"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#chats" target="_blank"><i class="ion-social-googleplus-outline"></i></a></li>
-							<li class="wow animated fadeInRight github"><a href="https://github.com/dhruv9045" target="_blank"><i class="ion-social-github"></i></a></li>
+							<li class="wow animated fadeInLeft facebook"><a href="#"><i class="ion-social-facebook"></i></a></li>
+							<li class="wow animated fadeInDown linkedin"><a href="#"><i class="ion-social-linkedin"></i></a></li>
+							<li class="wow animated fadeInDown googleplus"><a href="#"><i class="ion-social-googleplus-outline"></i></a></li>
+							<li class="wow animated fadeInRight github"><a href="#"><i class="ion-social-github"></i></a></li>
 							</ul>
 						</div>
 						<div class="col-md-3 col-sm-6 col-xs-12 segment-four">
-							<h2>Contact's</h2>
+							<h2>Contact Us</h2>
 							<ul class="address-list">
-								<!-- <li> <p> <div id="map"></div>
-									 <script>
-									  // Initialize and add the map
-									  function initMap() {
-									  // The location 
-									  var location = {lat: 29.930705, lng: 78.123585};
-									  // The map, centered at Uluru
-									  var map = new google.maps.Map(
-									      document.getElementById("map"), {zoom: 4, center: location});
-									  // The marker, positioned at Uluru
-									  var marker = new google.maps.Marker({position: location, map: map});
-									}
-									</script>
-									 <script async defer
-								    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZfkAVk2e5ur10XS22DXpqjhyekJTFFUU&callback=initMap">
-									</script>
-								</p>
-								 </li> -->
-								<li><p class="be-add"><i class="ion-ios-location" >&nbsp </i><span>Street no_01</span>&nbsp<span>Shree Nath Nagar</span>&nbsp<span>Jwalapur, Hardwar</span></p></li>
-								<li class="Phone"><a href="tel:7017833178"><i class="ion-ios-telephone">&nbsp </i>7017833178</a></li>
-								<li class="Email"><a href="mailto:singh1999dhruv@gmail.com"><i class="ion-email"> &nbsp</i>singh1999dhruv@gmail.com</a></li>
-
+								<li><img src="assets/img/coerlogo.png"><p class="be-add"><i class="ion-ios-location" >&nbsp </i><span>COER,</span><span>Vardhaman Puram,</span><span>7Km Roorkee Hardwar Road.</span></p></li>
+								<li class="Phone"><a href="tel:9027916020"><i class="ion-ios-telephone">&nbsp </i>87553 19302, 90279 016020, 96345 10669</a></li>
+								<li class="Email"><a href="mailto:webmaster@coer.ac.in"><i class="ion-email"> &nbsp</i>webmaster@coer.ac.in, academic@coer.ac.in</a></li>
 							</ul>
-						</div>	
-
+						</div>						
 				</section>
 				<section class="container">
 					<section class="row">
 						<section class="copy-right col-xs-12">
-							<p class="footer-bottom-text">All Right reserved by &copy;Dks.2019</p>
+							<p class="footer-bottom-text">All Right reserved by &copy;Traic.2019</p>
 						</section>
 					</section>
 				</section>
@@ -667,7 +671,7 @@
 			</section>	
 
 			<!-- ****************************** include .html ************************** -->
-			<script type="text/javascript">                   
+			<script type="text/javascript">
 				$(function(){
 					$(".footer").load("footer.html");
 					$(".header").load("header.html");
@@ -676,14 +680,13 @@
 				});
 			</script>
 
-	<!--ACHIVEMENT POP UP SCREEN START  -->
-	
-	<!-- IITKanpur'19 -->
-	<div class="modal fade" id="Modlling_TECHKRITI" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	<!--ACADEMIC SECTION POP UP SCREEN START  -->
+	<!-- IITRoorkee -->
+	<div class="modal fade" id="Modlling_COGNIZANCE" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog " role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Techkriti'19</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -691,18 +694,41 @@
       		<div class="modal-body">
 
 				<span >
-				Me and my team members representing COER in Indian Institute of Technology Kanpur event Techkriti which was held on 7 - 10th March 2019.<br>
-				Team name: ST@R@PTOR <br>
-				Team Leader: Peeyush sahu<br>
-				Team Members: 	Dhruv singh<br>
-								Jatin<br>
-								Vanya Sharma<br>
-				Took Part in Manouever				
-				<br>
+				Professor Satya P. Gupta joined as Director General of the College of Engineering Roorkee (COER) in November 2018. He has been associated with the Indian Institute of Technology Roorkee (formerly University of Roorkee) for 42 years where he joined as Lecturer in Electrical Engineering Department in 1976, became Reader in 1982 and Professor in Jan. 1994. Prior to joining UOR, he served Jyoti Limited, Vadodara as designer of high voltage induction motors operated directly from 3.3 KV, 6.6 KV and 11 KV supply, for about two years. He did B. Sc. Engineering in Electrical Engineering from Engineering College Dayabagh, Agra in 1971, ME with first position in 1973 and Ph. D. in 1986, both from Electrical Engineering Department of University of Roorkee and post doctoral work from University of Bristol under Commonwealth award in 1989-90. He also did teaching and research at University of Puerto Rico (USA) in 1990-91. After his superannuation in 2015, he was Emeritus Fellow in the Electrical Engineering Department for a period of three years.<br>
 
-				rch projects awarded by the Department of Science & Technology (DST) and the Ministry of Human Resource Development (MHRD). He received best paper award from the Institution of Engineers (India) twice. He is a Fellow of the Institution of Engineers (India) and Life member of the Indian Society of Technical Education.<br>
+				Professor Gupta in his career, worked on various positions of administrative responsibility at UOR/IITR such as Associate Dean, Development & Planning (July 1997 to March 2002), Professor-in-charge, Guest House and Institute Nodal Officer (Feb.2002 to Dec. 2004), Professor-in-charge Planning, Coordination and Liaison (Jan. 2005 to to Sept. 2006), Head of Electrical Engineering Department (Jan. 2006 to Dec. 2008), Coordinator, IIT Mandi Coordination Committee (Mar. 2009 to Jan. 2010), Dean Planning IIT Mandi and Dean, Greater Noida Extension Centre of IIT Roorkee (Jan. 2010 to Jan. 2011), Dean Alumni Affairs (Jan. 2011 to Dec. 2012) and Deputy Director (Jan. 2013 to Jan. 2015). As Head of Department he facilitated starting of 5-year IDD program in collaboration with University of Western Ontario, Canada and a Grant of Rs. 2.50 Crores from DST under FIST scheme. He was also associated in developing a video film on Research Frontiers at IIT Roorkee as well as in documenting a Supplement on History of Roorkee University.<br>
 
-				ts, Conferences, delivering invited lectures as well as for alumni networking. In May 2019, he travelled to Russia with a delegation of COER for signing an MoU between COER and Kuban State Agrarian University (KubSAU).
+				Professor Gupta made a very significant contribution in research in various areas of Electrical Machines, Drives and Power Electronics. He published about 75 research papers and guided 11 PhDs. He was also associated in research on Condition Monitoring of Electrical Machines where he also worked on two sponsored research projects awarded by the Department of Science & Technology (DST) and the Ministry of Human Resource Development (MHRD). He received best paper award from the Institution of Engineers (India) twice. He is a Fellow of the Institution of Engineers (India) and Life member of the Indian Society of Technical Education.<br>
+
+				Professor Gupta has travelled to Switzerland, Singapore, China, USA and UK for Academic assignments, Conferences, delivering invited lectures as well as for alumni networking. In May 2019, he travelled to Russia with a delegation of COER for signing an MoU between COER and Kuban State Agrarian University (KubSAU).
+				</span>
+	      	</div>
+	      	<div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+	<!-- IITKanpur -->
+	<div class="modal fade" id="Modlling_TECHKRITI" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      		</div>
+      		<div class="modal-body">
+
+				<span >
+				Professor Satya P. Gupta joined as Director General of the College of Engineering Roorkee (COER) in November 2018. He has been associated with the Indian Institute of Technology Roorkee (formerly University of Roorkee) for 42 years where he joined as Lecturer in Electrical Engineering Department in 1976, became Reader in 1982 and Professor in Jan. 1994. Prior to joining UOR, he served Jyoti Limited, Vadodara as designer of high voltage induction motors operated directly from 3.3 KV, 6.6 KV and 11 KV supply, for about two years. He did B. Sc. Engineering in Electrical Engineering from Engineering College Dayabagh, Agra in 1971, ME with first position in 1973 and Ph. D. in 1986, both from Electrical Engineering Department of University of Roorkee and post doctoral work from University of Bristol under Commonwealth award in 1989-90. He also did teaching and research at University of Puerto Rico (USA) in 1990-91. After his superannuation in 2015, he was Emeritus Fellow in the Electrical Engineering Department for a period of three years.<br>
+
+				Professor Gupta in his career, worked on various positions of administrative responsibility at UOR/IITR such as Associate Dean, Development & Planning (July 1997 to March 2002), Professor-in-charge, Guest House and Institute Nodal Officer (Feb.2002 to Dec. 2004), Professor-in-charge Planning, Coordination and Liaison (Jan. 2005 to to Sept. 2006), Head of Electrical Engineering Department (Jan. 2006 to Dec. 2008), Coordinator, IIT Mandi Coordination Committee (Mar. 2009 to Jan. 2010), Dean Planning IIT Mandi and Dean, Greater Noida Extension Centre of IIT Roorkee (Jan. 2010 to Jan. 2011), Dean Alumni Affairs (Jan. 2011 to Dec. 2012) and Deputy Director (Jan. 2013 to Jan. 2015). As Head of Department he facilitated starting of 5-year IDD program in collaboration with University of Western Ontario, Canada and a Grant of Rs. 2.50 Crores from DST under FIST scheme. He was also associated in developing a video film on Research Frontiers at IIT Roorkee as well as in documenting a Supplement on History of Roorkee University.<br>
+
+				Professor Gupta made a very significant contribution in research in various areas of Electrical Machines, Drives and Power Electronics. He published about 75 research papers and guided 11 PhDs. He was also associated in research on Condition Monitoring of Electrical Machines where he also worked on two sponsored research projects awarded by the Department of Science & Technology (DST) and the Ministry of Human Resource Development (MHRD). He received best paper award from the Institution of Engineers (India) twice. He is a Fellow of the Institution of Engineers (India) and Life member of the Indian Society of Technical Education.<br>
+
+				Professor Gupta has travelled to Switzerland, Singapore, China, USA and UK for Academic assignments, Conferences, delivering invited lectures as well as for alumni networking. In May 2019, he travelled to Russia with a delegation of COER for signing an MoU between COER and Kuban State Agrarian University (KubSAU).
 				</span>
 	      	</div>
 	      	<div class="modal-footer">
@@ -712,12 +738,12 @@
   </div>
 </div>
 	 
-	<!-- Manthan'19 -->
-	<div class="modal fade" id="Modlling_MANTHAN" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	<!-- DEHRADUN INSTITUE OF TECHNOLOGY -->
+	<div class="modal fade" id="Modlling_YOUYHOPIA" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog " role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Manthan'19</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -725,13 +751,13 @@
       		<div class="modal-body">
 
 				<span >
-				and Ph. D. in 1986, both from Electrical Engineering Department of University of Roorkee and post doctoral work from University of Bristol under Commonwealth award in 1989-90. He also did teaching and research at University of Puerto Rico (USA) in 1990-91. After his superannuation in 2015, he was Emeritus Fellow in the Electrical Engineering Department for a period of three years.<br>
+				Professor Satya P. Gupta joined as Director General of the College of Engineering Roorkee (COER) in November 2018. He has been associated with the Indian Institute of Technology Roorkee (formerly University of Roorkee) for 42 years where he joined as Lecturer in Electrical Engineering Department in 1976, became Reader in 1982 and Professor in Jan. 1994. Prior to joining UOR, he served Jyoti Limited, Vadodara as designer of high voltage induction motors operated directly from 3.3 KV, 6.6 KV and 11 KV supply, for about two years. He did B. Sc. Engineering in Electrical Engineering from Engineering College Dayabagh, Agra in 1971, ME with first position in 1973 and Ph. D. in 1986, both from Electrical Engineering Department of University of Roorkee and post doctoral work from University of Bristol under Commonwealth award in 1989-90. He also did teaching and research at University of Puerto Rico (USA) in 1990-91. After his superannuation in 2015, he was Emeritus Fellow in the Electrical Engineering Department for a period of three years.<br>
 
-				P010 to Jan. 2011), Dean Alumni Affairs (Jan. 2011 to Dec. 2012) and Deputy Director (Jan. 2013 to Jan. 2015). As Head of Department he facilitated starting of 5-year IDD program in collaboration with University of Western Ontario, Canada and a Grant of Rs. 2.50 Crores from DST under FIST scheme. He was also associated in developing a video film on Research Frontiers at IIT Roorkee as well as in documenting a Supplement on History of Roorkee University.<br>
+				Professor Gupta in his career, worked on various positions of administrative responsibility at UOR/IITR such as Associate Dean, Development & Planning (July 1997 to March 2002), Professor-in-charge, Guest House and Institute Nodal Officer (Feb.2002 to Dec. 2004), Professor-in-charge Planning, Coordination and Liaison (Jan. 2005 to to Sept. 2006), Head of Electrical Engineering Department (Jan. 2006 to Dec. 2008), Coordinator, IIT Mandi Coordination Committee (Mar. 2009 to Jan. 2010), Dean Planning IIT Mandi and Dean, Greater Noida Extension Centre of IIT Roorkee (Jan. 2010 to Jan. 2011), Dean Alumni Affairs (Jan. 2011 to Dec. 2012) and Deputy Director (Jan. 2013 to Jan. 2015). As Head of Department he facilitated starting of 5-year IDD program in collaboration with University of Western Ontario, Canada and a Grant of Rs. 2.50 Crores from DST under FIST scheme. He was also associated in developing a video film on Research Frontiers at IIT Roorkee as well as in documenting a Supplement on History of Roorkee University.<br>
 
-				) twice. He is a Fellow of the Institution of Engineers (India) and Life member of the Indian Society of Technical Education.<br>
+				Professor Gupta made a very significant contribution in research in various areas of Electrical Machines, Drives and Power Electronics. He published about 75 research papers and guided 11 PhDs. He was also associated in research on Condition Monitoring of Electrical Machines where he also worked on two sponsored research projects awarded by the Department of Science & Technology (DST) and the Ministry of Human Resource Development (MHRD). He received best paper award from the Institution of Engineers (India) twice. He is a Fellow of the Institution of Engineers (India) and Life member of the Indian Society of Technical Education.<br>
 
-				Professor Gupta has travelled to Switzerland, Singapore, China, USA and UK for Academic assignments, C a delegation of COER for signing an MoU between COER and Kuban State Agrarian University (KubSAU).
+				Professor Gupta has travelled to Switzerland, Singapore, China, USA and UK for Academic assignments, Conferences, delivering invited lectures as well as for alumni networking. In May 2019, he travelled to Russia with a delegation of COER for signing an MoU between COER and Kuban State Agrarian University (KubSAU).
 				</span>
 	      	</div>
 	      	<div class="modal-footer">
@@ -739,8 +765,35 @@
       </div>
     </div>
   </div>
-</div> 
-	
+</div>
+	<!-- GURUKUL KANGARI -->
+	<div class="modal fade" id="Modlling_JNANAGNI" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog " role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      		</div>
+      		<div class="modal-body">
+
+				<span >
+				Professor Satya P. Gupta joined as Director General of the College of Engineering Roorkee (COER) in November 2018. He has been associated with the Indian Institute of Technology Roorkee (formerly University of Roorkee) for 42 years where he joined as Lecturer in Electrical Engineering Department in 1976, became Reader in 1982 and Professor in Jan. 1994. Prior to joining UOR, he served Jyoti Limited, Vadodara as designer of high voltage induction motors operated directly from 3.3 KV, 6.6 KV and 11 KV supply, for about two years. He did B. Sc. Engineering in Electrical Engineering from Engineering College Dayabagh, Agra in 1971, ME with first position in 1973 and Ph. D. in 1986, both from Electrical Engineering Department of University of Roorkee and post doctoral work from University of Bristol under Commonwealth award in 1989-90. He also did teaching and research at University of Puerto Rico (USA) in 1990-91. After his superannuation in 2015, he was Emeritus Fellow in the Electrical Engineering Department for a period of three years.<br>
+
+				Professor Gupta in his career, worked on various positions of administrative responsibility at UOR/IITR such as Associate Dean, Development & Planning (July 1997 to March 2002), Professor-in-charge, Guest House and Institute Nodal Officer (Feb.2002 to Dec. 2004), Professor-in-charge Planning, Coordination and Liaison (Jan. 2005 to to Sept. 2006), Head of Electrical Engineering Department (Jan. 2006 to Dec. 2008), Coordinator, IIT Mandi Coordination Committee (Mar. 2009 to Jan. 2010), Dean Planning IIT Mandi and Dean, Greater Noida Extension Centre of IIT Roorkee (Jan. 2010 to Jan. 2011), Dean Alumni Affairs (Jan. 2011 to Dec. 2012) and Deputy Director (Jan. 2013 to Jan. 2015). As Head of Department he facilitated starting of 5-year IDD program in collaboration with University of Western Ontario, Canada and a Grant of Rs. 2.50 Crores from DST under FIST scheme. He was also associated in developing a video film on Research Frontiers at IIT Roorkee as well as in documenting a Supplement on History of Roorkee University.<br>
+
+				Professor Gupta made a very significant contribution in research in various areas of Electrical Machines, Drives and Power Electronics. He published about 75 research papers and guided 11 PhDs. He was also associated in research on Condition Monitoring of Electrical Machines where he also worked on two sponsored research projects awarded by the Department of Science & Technology (DST) and the Ministry of Human Resource Development (MHRD). He received best paper award from the Institution of Engineers (India) twice. He is a Fellow of the Institution of Engineers (India) and Life member of the Indian Society of Technical Education.<br>
+
+				Professor Gupta has travelled to Switzerland, Singapore, China, USA and UK for Academic assignments, Conferences, delivering invited lectures as well as for alumni networking. In May 2019, he travelled to Russia with a delegation of COER for signing an MoU between COER and Kuban State Agrarian University (KubSAU).
+				</span>
+	      	</div>
+	      	<div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 	<!-- POP UP STOP -->
 	<!--ACADEMIC SECTION POP UP SCREEN START  -->
 	<div class="modal fade" id="Modlling_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
